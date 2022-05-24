@@ -41,6 +41,7 @@ upload.onclick=()=>input.click();
 
 input.onchange = function(ev) {
     uploadImage(ev.target.files);
+    ev.target.value = "";
 }
 
 drop.ondragover = ev => ev.preventDefault();
